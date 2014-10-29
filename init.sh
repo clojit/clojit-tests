@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ ! -d "clojit-c" ]; then
     git clone https://github.com/clojit/clojit-c.git
     cd "clojit-c"
@@ -21,7 +20,7 @@ fi
 
 cd tests
 
-if [ ! -a "clojure-1.6.0.jar" ]
+if [ ! -e "clojure-1.6.0.jar" ]
 then
   wget "http://central.maven.org/maven2/org/clojure/clojure/1.6.0/clojure-1.6.0.jar"
 fi
