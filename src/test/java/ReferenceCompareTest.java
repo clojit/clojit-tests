@@ -49,19 +49,21 @@ public class ReferenceCompareTest {
 
         // read the output from the command
         System.out.println("Here is the standard output of the command:\n");
-        StringBuilder sb = new StringBuilder();
         String s = null;
         while ((s = stdInput.readLine()) != null) {
             System.out.println(s);
-            sb.append(s);
         }
 
         // read any errors from the attempted command
         System.out.println("Here is the standard error of the command (if any):\n");
         while ((s = stdError.readLine()) != null) {
             System.err.println(s);
-            sb.append(s);
         }
+        System.out.println("travis_fold:start:tests");
+    }
+
+    @AfterClass public static void tearDown(){
+        System.out.println("travis_fold:end:tests");
     }
 
     @Test public void anotherSample() throws IOException{
