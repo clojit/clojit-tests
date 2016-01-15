@@ -39,7 +39,7 @@ public class ReferenceCompareTest {
 
     @BeforeClass public static void setup() throws IOException{
         Runtime rt = Runtime.getRuntime();
-        String[] commands = {"sh","-c","chmod u+x setupsh && ./setup.sh"};
+        String[] commands = {"sh","-c","chmod u+x setup.sh && ./setup.sh"};
         Process proc = rt.exec(commands);
         BufferedReader stdInput = new BufferedReader(new
                 InputStreamReader(proc.getInputStream()));
