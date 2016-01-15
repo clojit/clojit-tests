@@ -17,7 +17,7 @@ import java.util.*;
 @RunWith(Parameterized.class)
 public class ReferenceCompareTest {
     String file = null;
-    @Parameterized.Parameters
+    @Parameterized.Parameters( name = "{index}: {0}" )
     public static Collection<Object[]> data() {
         File testFolder = new File("./tests");
         //ArrayList<File> files = new ArrayList<>();
