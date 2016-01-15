@@ -75,11 +75,11 @@ public class ReferenceCompareTest {
 
     private String getClojitOutput(String sFilename) throws IOException{
         executeCommand("cd tmp && cd clojit-c && lein run ../../" + sFilename);
-        return executeCommand("./tmp/clojit-cvm/main " + sFilename.replace(".clj",".cvmb"));
+        return executeCommand("./tmp/clojit-cvm/main ../../" + sFilename.replace(".clj",".cvmb"));
     }
 
     private String getReferenceOutput(String sFilename) throws IOException{
-        return executeCommand("java -cp ./lib/clojure-1.7.0.jar clojure.main ../../" + sFilename);
+        return executeCommand("java -cp ./lib/clojure-1.7.0.jar clojure.main " + sFilename);
     }
 
     private String executeCommand(String sCommand) throws IOException{
