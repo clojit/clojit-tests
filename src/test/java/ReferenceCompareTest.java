@@ -47,23 +47,11 @@ public class ReferenceCompareTest {
         BufferedReader stdError = new BufferedReader(new
                 InputStreamReader(proc.getErrorStream()));
 
-        // read the output from the command
-        System.out.println("Here is the standard output of the command:\n");
-        String s = null;
-        while ((s = stdInput.readLine()) != null) {
-            System.out.println(s);
-        }
-
-        // read any errors from the attempted command
-        System.out.println("Here is the standard error of the command (if any):\n");
-        while ((s = stdError.readLine()) != null) {
-            System.err.println(s);
-        }
-        System.out.println("travis_fold:start:tests");
+        //System.out.println("travis_fold:start:tests");
     }
 
     @AfterClass public static void tearDown(){
-        System.out.println("travis_fold:end:tests");
+        //System.out.println("travis_fold:end:tests");
     }
 
     @Test public void anotherSample() throws IOException{
@@ -101,14 +89,14 @@ public class ReferenceCompareTest {
         StringBuilder sb = new StringBuilder();
         String s = null;
         while ((s = stdInput.readLine()) != null) {
-            System.out.println(s);
+            //System.out.println(s);
             sb.append(s);
         }
 
         // read any errors from the attempted command
         System.out.println("Here is the standard error of the command (if any):\n");
         while ((s = stdError.readLine()) != null) {
-            System.err.println(s);
+            //System.err.println(s);
             sb.append(s);
         }
         return sb.toString();
