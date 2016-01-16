@@ -38,14 +38,14 @@ public class ReferenceCompareTest {
 
 
     @BeforeClass public static void setup() throws IOException{
-        Runtime rt = Runtime.getRuntime();
-        String[] commands = {"sh","-c","chmod u+x setup.sh && ./setup.sh"};
-        Process proc = rt.exec(commands);
-        BufferedReader stdInput = new BufferedReader(new
-                InputStreamReader(proc.getInputStream()));
-
-        BufferedReader stdError = new BufferedReader(new
-                InputStreamReader(proc.getErrorStream()));
+//        Runtime rt = Runtime.getRuntime();
+//        String[] commands = {"sh","-c","chmod u+x setup.sh && ./setup.sh"};
+//        Process proc = rt.exec(commands);
+//        BufferedReader stdInput = new BufferedReader(new
+//                InputStreamReader(proc.getInputStream()));
+//
+//        BufferedReader stdError = new BufferedReader(new
+//                InputStreamReader(proc.getErrorStream()));
 
         //System.out.println("travis_fold:start:tests");
     }
