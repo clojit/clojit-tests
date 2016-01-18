@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m36.88s</div>
+<div class="counter">1m19.70s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,10 +73,10 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="anotherSample[0: ./tests/builtin1.clj]"></a>
-<h3 class="failures">anotherSample[0: ./tests/builtin1.clj]</h3>
+<a name="anotherSample[0: ./tests/simple_protocol_type.clj]"></a>
+<h3 class="failures">anotherSample[0: ./tests/simple_protocol_type.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[test]&gt; but was:&lt;[f is the same]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[f is the same]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:63)
@@ -137,10 +137,10 @@
 </span>
 </div>
 <div class="test">
-<a name="anotherSample[1: ./tests/closure_test.clj]"></a>
-<h3 class="failures">anotherSample[1: ./tests/closure_test.clj]</h3>
+<a name="anotherSample[1: ./tests/complex_closure3.clj]"></a>
+<h3 class="failures">anotherSample[1: ./tests/complex_closure3.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[15]&gt; but was:&lt;[f is the same]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[f is the same]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:63)
@@ -265,10 +265,10 @@
 </span>
 </div>
 <div class="test">
-<a name="anotherSample[3: ./tests/complex_closure2.clj]"></a>
-<h3 class="failures">anotherSample[3: ./tests/complex_closure2.clj]</h3>
+<a name="anotherSample[3: ./tests/builtin1.clj]"></a>
+<h3 class="failures">anotherSample[3: ./tests/builtin1.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[12]&gt; but was:&lt;[f is the same]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[test]&gt; but was:&lt;[f is the same]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:63)
@@ -329,8 +329,8 @@
 </span>
 </div>
 <div class="test">
-<a name="anotherSample[4: ./tests/complex_closure3.clj]"></a>
-<h3 class="failures">anotherSample[4: ./tests/complex_closure3.clj]</h3>
+<a name="anotherSample[4: ./tests/simple_loop.clj]"></a>
+<h3 class="failures">anotherSample[4: ./tests/simple_loop.clj]</h3>
 <span class="code">
 <pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[f is the same]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
@@ -457,10 +457,10 @@
 </span>
 </div>
 <div class="test">
-<a name="anotherSample[6: ./tests/simple_loop.clj]"></a>
-<h3 class="failures">anotherSample[6: ./tests/simple_loop.clj]</h3>
+<a name="anotherSample[6: ./tests/complex_closure2.clj]"></a>
+<h3 class="failures">anotherSample[6: ./tests/complex_closure2.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[f is the same]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[12]&gt; but was:&lt;[f is the same]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:63)
@@ -521,10 +521,10 @@
 </span>
 </div>
 <div class="test">
-<a name="anotherSample[7: ./tests/simple_protocol_type.clj]"></a>
-<h3 class="failures">anotherSample[7: ./tests/simple_protocol_type.clj]</h3>
+<a name="anotherSample[7: ./tests/closure_test.clj]"></a>
+<h3 class="failures">anotherSample[7: ./tests/closure_test.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[f is the same]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[15]&gt; but was:&lt;[f is the same]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:63)
@@ -596,43 +596,43 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">anotherSample[0: ./tests/builtin1.clj]</td>
-<td>16.144s</td>
+<td class="failures">anotherSample[0: ./tests/simple_protocol_type.clj]</td>
+<td>15.386s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">anotherSample[1: ./tests/closure_test.clj]</td>
-<td>11.212s</td>
+<td class="failures">anotherSample[1: ./tests/complex_closure3.clj]</td>
+<td>9.017s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[2: ./tests/complex_closure.clj]</td>
-<td>11.109s</td>
+<td>9.473s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">anotherSample[3: ./tests/complex_closure2.clj]</td>
-<td>10.936s</td>
+<td class="failures">anotherSample[3: ./tests/builtin1.clj]</td>
+<td>9.264s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">anotherSample[4: ./tests/complex_closure3.clj]</td>
-<td>11.075s</td>
+<td class="failures">anotherSample[4: ./tests/simple_loop.clj]</td>
+<td>9.162s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[5: ./tests/multi_protocol_type.clj]</td>
-<td>11.290s</td>
+<td>9.410s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">anotherSample[6: ./tests/simple_loop.clj]</td>
-<td>12.229s</td>
+<td class="failures">anotherSample[6: ./tests/complex_closure2.clj]</td>
+<td>8.973s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">anotherSample[7: ./tests/simple_protocol_type.clj]</td>
-<td>12.887s</td>
+<td class="failures">anotherSample[7: ./tests/closure_test.clj]</td>
+<td>9.016s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -747,7 +747,7 @@ Here is the standard error of the command (if any):
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.5</a> at Jan 16, 2016 12:36:08 PM</p>
+<a href="http://www.gradle.org">Gradle 2.5</a> at Jan 18, 2016 9:57:59 AM</p>
 </div>
 </div>
 </body>
