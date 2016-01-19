@@ -38,16 +38,7 @@ public class ReferenceCompareTest {
 
 
     @BeforeClass public static void setup() throws IOException{
-//        Runtime rt = Runtime.getRuntime();
-//        String[] commands = {"sh","-c","chmod u+x setup.sh && ./setup.sh"};
-//        Process proc = rt.exec(commands);
-//        BufferedReader stdInput = new BufferedReader(new
-//                InputStreamReader(proc.getInputStream()));
-//
-//        BufferedReader stdError = new BufferedReader(new
-//                InputStreamReader(proc.getErrorStream()));
-
-        //System.out.println("travis_fold:start:tests");
+        executeCommand("chmod u+x setup.sh && ./setup.sh");
     }
 
     @AfterClass public static void tearDown(){
@@ -68,11 +59,11 @@ public class ReferenceCompareTest {
         return executeCommand("./tmp/clojit-cvm/main " + sFilename.replace(".clj",".cvmb"));
     }
 
-    private String getReferenceOutput(String sFilename) throws IOException{
+    private  String getReferenceOutput(String sFilename) throws IOException{
         return executeCommand("java -cp ./lib/clojure-1.7.0.jar clojure.main " + sFilename);
     }
 
-    private String executeCommand(String sCommand) throws IOException{
+    private static String executeCommand(String sCommand) throws IOException{
 
         Runtime rt = Runtime.getRuntime();
         String[] commands = {"sh","-c",sCommand};
