@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">48.922s</div>
+<div class="counter">47.625s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,7 +76,7 @@
 <a name="anotherSample[0: ../tests/simple_protocol_type.clj]"></a>
 <h3 class="failures">anotherSample[0: ../tests/simple_protocol_type.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================4802==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7fff116d0300 sp 0x7fff116d0020 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7fa68f52e7ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==4802==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -140,7 +140,7 @@
 <a name="anotherSample[1: ../tests/complex_closure3.clj]"></a>
 <h3 class="failures">anotherSample[1: ../tests/complex_closure3.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================4832==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7ffc9afadd70 sp 0x7ffc9afadaa0 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7fed478607ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==4832==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -204,7 +204,7 @@
 <a name="anotherSample[2: ../tests/complex_closure.clj]"></a>
 <h3 class="failures">anotherSample[2: ../tests/complex_closure.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[25]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================4863==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7ffe30df6e90 sp 0x7ffe30df6bc0 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7fbe29ab67ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==4863==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[25]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -268,7 +268,7 @@
 <a name="anotherSample[3: ../tests/builtin1.clj]"></a>
 <h3 class="failures">anotherSample[3: ../tests/builtin1.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[test]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================4893==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7fffbe9810e0 sp 0x7fffbe980e00 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7f251b1417ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==4893==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[test]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -332,7 +332,7 @@
 <a name="anotherSample[4: ../tests/simple_loop.clj]"></a>
 <h3 class="failures">anotherSample[4: ../tests/simple_loop.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================4923==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7ffdf47f6730 sp 0x7ffdf47f6460 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7f4189f5e7ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==4923==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -396,7 +396,7 @@
 <a name="anotherSample[5: ../tests/multi_protocol_type.clj]"></a>
 <h3 class="failures">anotherSample[5: ../tests/multi_protocol_type.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[250]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================4953==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7ffe600866d0 sp 0x7ffe60086400 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7efc842167ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==4953==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[250]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -460,7 +460,7 @@
 <a name="anotherSample[6: ../tests/complex_closure2.clj]"></a>
 <h3 class="failures">anotherSample[6: ../tests/complex_closure2.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[12]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================5005==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7ffe48db6480 sp 0x7ffe48db61a0 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7f6e144c57ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==5005==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[12]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -524,7 +524,7 @@
 <a name="anotherSample[7: ../tests/closure_test.clj]"></a>
 <h3 class="failures">anotherSample[7: ../tests/closure_test.clj]</h3>
 <span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[15]&gt; but was:&lt;[execute.c:33:22: runtime error: load of null pointer of type 'instr' (aka 'unsigned int')SUMMARY: AddressSanitizer: undefined-behavior execute.c:33 ASAN:SIGSEGV===================================================================5035==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000006b9adc bp 0x7ffd7bcedc40 sp 0x7ffd7bced960 T0)    #0 0x6b9adb in start /home/travis/build/clojit/clojit-cvm/execute.c:33:22    #1 0x7f1b3a6007ec  (/lib/x86_64-linux-gnu/libc.so.6+0x217ec)    #2 0x44e6e8 in _start (/home/travis/build/clojit/clojit-cvm/main+0x44e6e8)AddressSanitizer can not provide additional info.SUMMARY: AddressSanitizer: SEGV /home/travis/build/clojit/clojit-cvm/execute.c:33 start==5035==ABORTING]&gt;
+<pre>org.junit.ComparisonFailure: expected:&lt;[15]&gt; but was:&lt;[sh: 1: ../main: not found]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at ReferenceCompareTest.anotherSample(ReferenceCompareTest.java:54)
@@ -597,42 +597,42 @@
 </thead>
 <tr>
 <td class="failures">anotherSample[0: ../tests/simple_protocol_type.clj]</td>
-<td>6.249s</td>
+<td>6.061s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[1: ../tests/complex_closure3.clj]</td>
-<td>6.068s</td>
+<td>6.003s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[2: ../tests/complex_closure.clj]</td>
-<td>6.053s</td>
+<td>5.828s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[3: ../tests/builtin1.clj]</td>
-<td>5.678s</td>
+<td>5.465s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[4: ../tests/simple_loop.clj]</td>
-<td>6.075s</td>
+<td>5.764s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[5: ../tests/multi_protocol_type.clj]</td>
-<td>6.844s</td>
+<td>6.628s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[6: ../tests/complex_closure2.clj]</td>
-<td>5.929s</td>
+<td>5.862s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">anotherSample[7: ../tests/closure_test.clj]</td>
-<td>6.026s</td>
+<td>6.014s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -751,7 +751,7 @@ Here is the standard error of the command (if any):
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.5</a> at Jul 17, 2016 6:09:10 PM</p>
+<a href="http://www.gradle.org">Gradle 2.5</a> at Jul 17, 2016 7:49:40 PM</p>
 </div>
 </div>
 </body>
